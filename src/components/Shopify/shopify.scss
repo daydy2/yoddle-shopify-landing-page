@@ -1,0 +1,9 @@
+@import '../../sass/abstracts/base';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/variables';
+
+.shopify{
+    position: relative;
+    background: $color-bg-section1;
+    display: flex;
+}

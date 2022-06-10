@@ -1,0 +1,148 @@
+@import '../../sass/abstracts/base';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/variables';
+
+.main{
+    background: $color-bg-section1;
+    position: sticky;
+    z-index: 9;
+}
+.nav{
+    @include flexrow;
+    height: 80px;
+    width: 85%;
+    // background-color: gray;
+    line-height: 1.8px;
+    font-family: 'Lora', serif;
+    font-size: 1.8rem !important;
+    padding: 15px 10px 0 10px;
+    margin: 0 7.5% 0 7.5%;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+    &__div-navbrand{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+
+    &__span-brandtext{
+        font-size: 2.9rem;
+        font-family: 'Cabin', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        padding-top: 28px ;
+       
+    }
+
+    &__div-main-right{
+        @include flexrow;
+    }
+
+    &__div-main-left{
+        @include flexrow;
+    }
+    
+    &__main-leftText{
+        width: 98px;
+        height: 37px;
+        margin-top: 28px;
+        padding: auto;
+        text-align: center;
+    }
+   
+    &__div-leftText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 14px;
+        text-align: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    
+    &__div-toggle{
+        padding: 15px;
+        display: none;
+
+        &-Text{
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        
+        &-Line{
+            width: 2.2rem;
+            height: 0.3rem;
+            margin: 3px;
+            background-color: black;
+        }
+        &-Box{
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width: 1080px) {
+            display: flex;
+            
+        }
+    }
+    @media screen and (max-width: 1080px){
+        &hidden{
+            display: none;
+            
+        }
+        
+    }
+}
+.textBox{
+    @include btnHover;
+    padding: 0 10px;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 1;
+    }
+}
+.btn{
+    font-size: 1.8rem !important;
+    margin: 10px 10px;   
+}
+.dropdown{ 
+    
+    &-menu{
+        width: 250px;
+        border-radius: 5px;
+        
+    }
+    &-item{
+        font-size: 1.7rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        padding: 10px 25px;
+        opacity: 0.8;  
+        
+        &:hover{
+            opacity: 1;
+            border-left: 4px solid $color-bg-section2;
+        }
+    }
+    
+    &MenuButton1{
+
+        &:hover{
+            border-style: none;
+            transform: translateY(0);
+        }
+    }
+}
+.dropdown-menu > hr{
+    margin-left: 25px;
+    margin-right: 25px;
+}

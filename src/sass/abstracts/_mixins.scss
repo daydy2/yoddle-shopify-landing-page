@@ -1,0 +1,13 @@
+@mixin flexrow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@mixin btnHover{
+    background: $nav-trial;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+    border-radius: 6px;
+}
