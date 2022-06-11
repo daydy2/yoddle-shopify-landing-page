@@ -89,7 +89,7 @@ const Navbar = () => {
                 </div>       
                 <div className="nav__div-toggle">
                     <div className="nav__div-toggle-Text">
-                        <span className="nav__span-leftText text-nowrap " id='navvisible'>Log in</span>
+                        <span className="nav__span-leftText text-nowrap " id='navvisible'>Start free trial</span>
                     </div>
                     <div className='nav__div-toggle-Box'>
                         <div className="nav__div-toggle-Line"></div>

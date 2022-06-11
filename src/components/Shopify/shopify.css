@@ -12,8 +12,81 @@ html {
 .shopify {
   position: relative;
   background: #fbf7ed;
+  z-index: 1;
+}
+
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw !important;
+  height: 692px;
+  overflow-x: hidden;
+}
+
+.section__div1 {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  font-family: 'Lora', serif;
+}
+
+.section__div1-emailForm {
+  width: 597px;
+  height: 354px;
+  margin-top: 180px;
+  margin-left: 6.6%;
+  padding: 10px;
+}
+
+.section__div1-text {
+  font-size: 4.3rem;
+  font-weight: bolder;
+  width: 499px;
+  text-align: start;
+  padding: 0;
+  color: #004c3f;
+}
+
+.section__div1-form {
+  margin-top: 15px;
+}
+
+.section__div1-form > input {
+  width: 320px;
+  height: 51px;
+  padding: 3px 10px;
+  font-size: 1.6rem;
+  border: 1px solid #007559;
+  border-radius: 6px;
+  margin-right: 7px;
+}
+
+.section__div1-form > input:active, .section__div1-form > input :focus {
+  outline: none;
+  border: 2.5px solid rgba(0, 117, 89, 0.3);
+}
+
+.section__div1-form > button {
+  background: #007559;
+  color: white;
+  font-weight: bold;
+  opacity: 0.9;
+  border-radius: 6px;
+  width: 164px;
+  height: 51px;
+  border-style: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.section__div2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  background-image: url("../../img/nat-9.jpg");
+  background-size: cover;
+  background-position: top;
 }
 /*# sourceMappingURL=shopify.css.map */

@@ -5,5 +5,73 @@
 .shopify{
     position: relative;
     background: $color-bg-section1;
+    z-index: 1;
+    
+}
+.section{
     display: flex;
+    width: 100vw !important;
+    height: 692px;
+    overflow-x: hidden;
+
+    &__div1{
+        flex: 7;
+        // position: relative;
+        font-family: 'Lora', serif;
+
+        &-emailForm{
+            width: 597px;
+            height: 354px;
+            // position: absolute;
+            margin-top: 180px;
+            margin-left: 6.6%;
+            padding: 10px;
+        }
+        &-text{
+            font-size: 4.3rem;
+            font-weight: bolder;
+            width: 499px;
+            text-align: start;
+            padding: 0;
+            color: $color-bg-section2;
+
+        }
+        &-form{
+            margin-top: 15px;
+
+            & > input{
+                width: 320px;
+                height: 51px;
+                padding:3px 10px ;
+                font-size: 1.6rem;
+                border: 1px solid $nav-trial;
+                border-radius: 6px;
+                margin-right: 7px;
+
+                &:active, :focus{
+                    outline: none;
+                    border: 2.5px solid $nav-trial2;
+                }
+            }
+            & > button{
+                @include btnHover;
+                width: 164px;
+                height: 51px;
+                border-style:none;
+                outline: none;
+                font-size: 1.6rem;
+                font-weight: bold;
+            }
+        }
+        
+    }
+    &__div2{
+        flex: 5;
+        background-image: url("../../img/nat-9.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+    @media screen and () {
+        
+    }
 }

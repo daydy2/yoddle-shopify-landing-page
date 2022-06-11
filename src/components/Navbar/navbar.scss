@@ -4,7 +4,9 @@
 
 .main{
     background: $color-bg-section1;
-    position: sticky;
+    position: fixed;
+    width: 100vw;
+    top: 0;
     z-index: 9;
 }
 .nav{
@@ -32,13 +34,21 @@
         
     }
 
-    &__span-brandtext{
-        font-size: 2.9rem;
-        font-family: 'Cabin', sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        padding-top: 28px ;
-       
+    &__span{
+        &-brandtext{
+            font-size: 2.9rem;
+            font-family: 'Cabin', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            padding-top: 28px ;
+        }
+        &-leftText{
+            text-decoration: underline;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 
     &__div-main-right{

@@ -11,8 +11,9 @@ html {
 
 .main {
   background: #fbf7ed;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100vw;
+  top: 0;
   z-index: 9;
 }
 
@@ -62,6 +63,14 @@ html {
   font-weight: 700;
   font-style: italic;
   padding-top: 28px;
+}
+
+.nav__span-leftText {
+  text-decoration: underline;
+}
+
+.nav__span-leftText:hover {
+  cursor: pointer;
 }
 
 .nav__div-main-right {
@@ -150,7 +159,7 @@ html {
 }
 
 .textBox {
-  background: #045a44;
+  background: #007559;
   color: white;
   font-weight: bold;
   opacity: 0.9;
