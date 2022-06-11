@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
+import playIcon from '../../img/icons8-play-24.png'
 import './shopify.css'
 
 const Shopify = () => {
@@ -13,22 +14,30 @@ const Shopify = () => {
         <Navbar />
           <section className="section">
             {/* <Navbar /> */}
-            <div className="section__div1">
-              <div className="section__div1-emailForm">               
-                <p className="section__div1-text">Build an online business—no matter what business you’re in</p>
-              
-                <form onSubmit={handleForm} className='section__div1-form'>
-                  <label for="useremail"></label>
-                  <input type="email" name="useremail" id="useremail" placeholder='Enter your email address'/>
-                  <button type="submit"> Start free trial</button>
-                </form>
+            
+              <div className="section__div1">
+                <div className=" section__div1-emailForm ">               
+                  <p className="section__div1-text">Build an online business—no matter what business you’re in</p>
+                
+                  <form onSubmit={handleForm} className='section__div1-form'>
+                    <label for="useremail"></label>
+                    <input type="email" name="useremail" id="useremail" placeholder='Enter your email address'/>
+                    <button type="submit"> Start free trial</button>
+                  </form>
 
-                <p className='section__div1-pText'>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+                  <p className='section__div1-pText'>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+                </div>
               </div>
-            </div>
-            <div className="section__div2">
-
-            </div>
+              <div className="section__div2">
+                <div className="section__div2-playVideo">
+                  <div className="section__div2-icon">
+                    <img src={playIcon} alt="play icon" />
+                  </div>
+                  <span className='section__div2-spanText'>Play video</span>
+                </div>
+                
+              </div>
+           
           </section>
           
         </main>

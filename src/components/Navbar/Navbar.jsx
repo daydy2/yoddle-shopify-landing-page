@@ -67,6 +67,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="nav__div-main-left navhidden">
+                <span className="nav__div-leftText text-nowrap " >Pricing</span>
                     <div class="dropdown ">
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Learn

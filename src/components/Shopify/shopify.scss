@@ -10,37 +10,57 @@
 }
 .section{
     display: flex;
+    flex-direction: row;
     width: 100vw !important;
-    height: 692px;
-    overflow-x: hidden;
+    font-family: 'Lora', serif;
+    
+   
 
     &__div1{
+
+        height: 542px;
         flex: 7;
-        // position: relative;
+        position: relative;
         font-family: 'Lora', serif;
 
         &-emailForm{
-            width: 597px;
-            height: 354px;
+            width: 80%;
+            height: 300px;
             // position: absolute;
-            margin-top: 180px;
+            margin-top: 23%;
             margin-left: 6.6%;
             padding: 10px;
         }
         &-text{
             font-size: 4.3rem;
             font-weight: bolder;
-            width: 499px;
+            width: 70.9%;
             text-align: start;
             padding: 0;
             color: $color-bg-section2;
 
+            @media screen and (max-width: 1080px) and (min-width: 900px) {
+                &{
+                    font-size: 3.5rem;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                &{
+                    font-size: 3.1rem;
+                }
+            }
+
+        }
+        &-pText{
+            font-size: 1.3rem;
+            margin-top: 15px;
+            
         }
         &-form{
             margin-top: 15px;
 
             & > input{
-                width: 320px;
+                width: 72.0%;
                 height: 51px;
                 padding:3px 10px ;
                 font-size: 1.6rem;
@@ -48,7 +68,7 @@
                 border-radius: 6px;
                 margin-right: 7px;
 
-                &:active, :focus{
+                &:active, &:focus{
                     outline: none;
                     border: 2.5px solid $nav-trial2;
                 }
@@ -61,17 +81,77 @@
                 outline: none;
                 font-size: 1.6rem;
                 font-weight: bold;
+                margin-top: 10px;
+            }
+            @media screen and (max-width: 800px) and (min-width: 700px){
+                &{
+                  
+                    & > input{
+                        font-size: 1.5rem;
+                    }
+                    & >button{
+                        margin-top: 15px;
+                    }
+                }
+            }
+            @media screen and (max-width: 500px) and (min-width: 350px){
+                &{
+                    display: flex;
+                    flex-direction: column;
+
+                    & > input{
+                        font-size: 1.4rem;
+                    }
+                    & >button{
+                        width: 72.0%;
+                        margin-top: 15px;
+                    }
+                }
             }
         }
-        
     }
     &__div2{
+        height: 692px;
+        width: 100%;
         flex: 5;
         background-image: url("../../img/nat-9.jpg");
         background-size: cover;
         background-position: top;
-    }
-    @media screen and () {
+        position: relative;
+
+        &-playVideo{
+            position: absolute;
+            display: flex;
+            bottom: 7%;
+            right: 7%;            
+            font-size: 1.8rem;
+
+            &:hover{
+                cursor:pointer;
+            }
+        }
+        &-icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-spanText{
+            color: white;
+            margin-left: 7px;
+            font-weight: 600;
+        }
         
     }
+
+    @media screen and (max-width: 1080px) {
+        &{
+            flex-direction: column;
+            height: 1200px;           
+        }
+    }
+    
 }

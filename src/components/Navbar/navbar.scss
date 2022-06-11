@@ -4,6 +4,7 @@
 
 .main{
     background: $color-bg-section1;
+    
     position: fixed;
     width: 100vw;
     top: 0;
@@ -16,6 +17,8 @@
     // background-color: gray;
     line-height: 1.8px;
     font-family: 'Lora', serif;
+    color: $nav-list-color;
+    font-weight: 600;
     font-size: 1.8rem !important;
     padding: 15px 10px 0 10px;
     margin: 0 7.5% 0 7.5%;
@@ -121,11 +124,15 @@
     }
 }
 .btn{
+    color: $nav-list-color;
+    font-weight: 600;
     font-size: 1.8rem !important;
     margin: 10px 10px;   
 }
 .dropdown{ 
-    
+    color: $nav-list-color;
+    font-weight: 600;
+
     &-menu{
         width: 250px;
         border-radius: 5px;
