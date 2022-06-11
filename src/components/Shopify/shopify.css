@@ -95,6 +95,9 @@ html {
   font-weight: bold;
   opacity: 0.9;
   border-radius: 6px;
+  box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.79);
   width: 164px;
   height: 51px;
   border-style: none;
@@ -188,5 +191,10 @@ html {
             flex-direction: column;
     height: 1200px;
   }
+}
+
+.section2 {
+  background: #004c3f;
+  color: #fff;
 }
 /*# sourceMappingURL=shopify.css.map */

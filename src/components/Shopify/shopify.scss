@@ -13,8 +13,6 @@
     flex-direction: row;
     width: 100vw !important;
     font-family: 'Lora', serif;
-    
-   
 
     &__div1{
 
@@ -154,4 +152,9 @@
         }
     }
     
+}
+
+.section2{
+    background: $color-bg-section2;
+    color: #fff;
 }
