@@ -1,6 +1,7 @@
 @import '../../sass/abstracts/base';
 @import '../../sass/abstracts/mixins';
 @import '../../sass/abstracts/variables';
+@import '../../sass//base/animations';
 
 .shopify{
     position: relative;
@@ -157,4 +158,155 @@
 .section2{
     background: $color-bg-section2;
     color: #fff;
+    padding: 7% 5% 7% $section2-leftpad;
+    font-family: 'Lora', serif;
+    line-height: 1.8rem;
+    overflow-x: hidden;
+
+    &__ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-top: 60px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 0;
+
+        &-listItem{
+
+            & > img{
+                width: calc(16.25% * 100vw);
+                height: calc(calc(394px / 100vh) * 100%);
+
+                @media screen and (max-width: 800px) and (min-width: 300px) {
+                    &{
+                        width: 45vw;
+                        height: 65vh;
+                        border-radius: 7px;
+                        box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 1px 6px 9px -2px rgba(0,0,0,0.75); 
+                    }
+                }
+            }
+
+            &P1{ 
+                margin-top: 15px;
+                font-size: 1.4rem;    
+
+                & > a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 600;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }                   
+                                        
+                }
+                @media screen and (max-width: 1080px) and (min-width: 500px){
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 499px) and (min-width: 300px){
+                    font-size: 1.0rem;
+                }
+            }
+
+            &P2{
+                font-size: 1.7rem;
+                font-weight: 400;
+                text-transform: capitalize;
+
+                &:hover{
+                    cursor: pointer;
+                }
+                @media screen and (max-width: 1080px) and (min-width: 500px){
+                    font-size: 1.5rem;
+                }
+                @media screen and (max-width: 499px) and (min-width: 300px){
+                    font-size: 1.2rem;
+                }
+            }
+            
+        }
+        
+        @media screen and (max-width: 800px) and (min-width: 300px) {
+            &{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    &__div{
+
+        &-h1Text{
+            font-family: 'Cabin', sans-serif;
+            font-weight: 400;
+            font-size: 4.5rem;
+            
+            @media screen and (max-width: 768px) and (min-width: 500px) {
+                &{
+                    font-size: 3.9rem;
+                }
+            }
+            @media screen and (max-width: 499px) and (min-width: 300px) {
+                font-size: 3.5rem;
+            }
+        }
+        &-pText{
+            font-size: 1.6rem;
+            margin-top: 17px;
+        }
+        &-pExample{
+            font-size: 1.5rem;
+            margin-top: 17px;
+            font-weight: 600;
+            transition: transform 0.3s ease-out;
+
+            &-icon{
+                margin-left: 6px;
+
+                &:hover{
+                    transform: translateX(5px);
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }
+.margBot{
+    margin-left: .5%;
+    margin-right: .5%;
+
+    &Left{
+        margin-left: .5%;
+
+        @media screen and (max-width: 800px) and (min-width: 300px) {
+            &{
+                margin-top: 10px; 
+            }
+        }
+    }
+    
+    &Right{
+        margin-right: .5%;
+
+        @media screen and (max-width: 800px) and (min-width: 300px) {
+            &{
+                margin-bottom: 10px; 
+            }
+        }
+    }
+    @media screen and (max-width: 800px) and (min-width: 300px) {
+        &{
+            margin-bottom: 10px;
+            margin-top: 10px; 
+        }
+    }
+}
+

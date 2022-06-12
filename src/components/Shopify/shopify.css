@@ -9,6 +9,36 @@ html {
   font-size: 62.5%;
 }
 
+@-webkit-keyframes moveInLeft {
+  0% {
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px);
+  }
+  80% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    -webkit-transform: translateX(-14px);
+            transform: translateX(-14px);
+  }
+  80% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .shopify {
   position: relative;
   background: #fbf7ed;
@@ -196,5 +226,187 @@ html {
 .section2 {
   background: #004c3f;
   color: #fff;
+  padding: 7% 5% 7% calc(7.5% + 15px);
+  font-family: 'Lora', serif;
+  line-height: 1.8rem;
+  overflow-x: hidden;
+}
+
+.section2__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin-top: 60px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 0;
+}
+
+.section2__ul-listItem > img {
+  width: calc(16.25% * 100vw);
+  height: calc(calc(394px / 100vh) * 100%);
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .section2__ul-listItem > img {
+    width: 45vw;
+    height: 65vh;
+    border-radius: 7px;
+    box-shadow: 1px 6px 9px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 6px 9px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 6px 9px -2px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.section2__ul-listItemP1 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.section2__ul-listItemP1 > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+.section2__ul-listItemP1 > a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1080px) and (min-width: 500px) {
+  .section2__ul-listItemP1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+  .section2__ul-listItemP1 {
+    font-size: 1.0rem;
+  }
+}
+
+.section2__ul-listItemP2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.section2__ul-listItemP2:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) and (min-width: 500px) {
+  .section2__ul-listItemP2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+  .section2__ul-listItemP2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .section2__ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.section2__div-h1Text {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  .section2__div-h1Text {
+    font-size: 3.9rem;
+  }
+}
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+  .section2__div-h1Text {
+    font-size: 3.5rem;
+  }
+}
+
+.section2__div-pText {
+  font-size: 1.6rem;
+  margin-top: 17px;
+}
+
+.section2__div-pExample {
+  font-size: 1.5rem;
+  margin-top: 17px;
+  font-weight: 600;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.section2__div-pExample-icon {
+  margin-left: 6px;
+}
+
+.section2__div-pExample-icon:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
+.section2__div-pExample:hover {
+  cursor: pointer;
+}
+
+.margBot {
+  margin-left: .5%;
+  margin-right: .5%;
+}
+
+.margBotLeft {
+  margin-left: .5%;
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .margBotLeft {
+    margin-top: 10px;
+  }
+}
+
+.margBotRight {
+  margin-right: .5%;
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .margBotRight {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px) {
+  .margBot {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=shopify.css.map */

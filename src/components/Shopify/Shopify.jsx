@@ -4,7 +4,7 @@ import playIcon from '../../img/icons8-play-24.png'
 import sam1 from '../../img/sam1.jpg'
 import sam2 from '../../img/sam2.jpg'
 import sam3 from '../../img/sam3.jpg'
-import sam4 from '../../img/sam4.jpg'
+import sam4 from '../../img/sam41.jpg'
 import sam5 from '../../img/sam5.jpg'
 import './shopify.css'
 
@@ -49,29 +49,53 @@ const Shopify = () => {
             <div className="section2__div-adText">
               <h1 className="section2__div-h1Text">Bring your business online</h1>
               <p className='section2__div-pText'>Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
-              <p className='setion2__div-pExample'>
+              <p className='section2__div-pExample'>
                 Explore more examples
                 <span className="section2__div-pExample-icon">
                   <i class="fa-solid fa-arrow-right"></i>
                 </span>
               </p>
               <ul className="section2__ul">
-                <li className="section2__ul-listItem">
-                  <img src="" alt="" srcset="" />
+
+                <li className="section2__ul-listItem margBotRight">
+                  <img src={sam1} class="img-fluid" alt="card 1" />
+                  <p className="section2__ul-listItemP1"><a href="#">food & drink</a></p>
+                  <p className="section2__ul-listItemP2">Alfred</p>
                 </li>
-                <li className="section2__ul-listItem">
-                  <img src="" alt="" srcset="" />
+
+                <li className="section2__ul-listItem margBot">
+                  <img src={sam2} class="img-fluid" alt="card 2"/>
+                  <p className="section2__ul-listItemP1"><a href="#">Jewelry</a></p>
+                  <p className="section2__ul-listItemP2">Corey Moranis</p>
                 </li>
-                <li className="section2__ul-listItem">
-                  <img src="" alt="" srcset="" />
+
+                <li className="section2__ul-listItem margBot">
+                  <img src={sam3} class="img-fluid" alt="card 3" />
+                  <p className="section2__ul-listItemP1"><a href="#">food & drink</a></p>
+                  <p className="section2__ul-listItemP2">Detour Coffee</p>
                 </li>
-                <li className="section2__ul-listItem">
-                  <img src="" alt="" srcset="" />
+
+                <li className="section2__ul-listItem margBot">
+                  <img src={sam4} class="img-fluid" alt="card 4"  />
+                  <p className="section2__ul-listItemP1"><a href="#">Beauty & cosmetics</a></p>
+                  <p className="section2__ul-listItemP2">then i met you</p>
                 </li>
-                <li className="section2__ul-listItem">
-                  <img src="" alt="" srcset="" />
-                </li>                
+
+                <li className="section2__ul-listItem margBotLeft">
+                  <img src={sam5} class="img-fluid" alt="card 5"  />
+                  <p className="section2__ul-listItemP1"><a href="#">Home & garden</a></p>
+                  <p className="section2__ul-listItemP2">Miss boon</p>
+                </li>  
+
               </ul>
+            </div>
+
+            <div className="section2__div-footer">
+              <h2 className="section2__h2-heading">Take the best path forward</h2>
+
+              <div className="section2__div-footerQ">
+                
+              </div>
             </div>
           </section>
           
