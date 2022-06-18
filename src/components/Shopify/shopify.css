@@ -39,6 +39,53 @@ html {
   }
 }
 
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+
 .shopify {
   position: relative;
   background: #fbf7ed;
@@ -58,7 +105,7 @@ html {
 }
 
 .section__div1 {
-  height: 542px;
+  height: 54.2rem;
   -webkit-box-flex: 7;
       -ms-flex: 7;
           flex: 7;
@@ -68,7 +115,7 @@ html {
 
 .section__div1-emailForm {
   width: 80%;
-  height: 300px;
+  height: 30.0rem;
   margin-top: 23%;
   margin-left: 6.6%;
   padding: 10px;
@@ -97,16 +144,16 @@ html {
 
 .section__div1-pText {
   font-size: 1.3rem;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .section__div1-form {
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .section__div1-form > input {
   width: 72.0%;
-  height: 51px;
+  height: 5.1rem;
   padding: 3px 10px;
   font-size: 1.6rem;
   border: 1px solid #007559;
@@ -128,8 +175,8 @@ html {
   box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.79);
   -moz-box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.79);
-  width: 164px;
-  height: 51px;
+  width: 16.4rem;
+  height: 5.1rem;
   border-style: none;
   outline: none;
   font-size: 1.6rem;
@@ -378,35 +425,57 @@ html {
   cursor: pointer;
 }
 
-.margBot {
+.section2__h2-heading {
+  margin: 3rem 0;
+  font-weight: 400;
+}
+
+.section2 .margBot {
   margin-left: .5%;
   margin-right: .5%;
 }
 
-.margBotLeft {
+.section2 .margBotLeft {
   margin-left: .5%;
 }
 
 @media screen and (max-width: 800px) and (min-width: 300px) {
-  .margBotLeft {
+  .section2 .margBotLeft {
     margin-top: 10px;
   }
 }
 
-.margBotRight {
+.section2 .margBotRight {
   margin-right: .5%;
 }
 
 @media screen and (max-width: 800px) and (min-width: 300px) {
-  .margBotRight {
+  .section2 .margBotRight {
     margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 800px) and (min-width: 300px) {
-  .margBot {
+  .section2 .margBot {
     margin-bottom: 10px;
     margin-top: 10px;
   }
+}
+
+.section3 {
+  background: orangered;
+}
+
+.section3__header-text {
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section3 > p {
+  font-size: 1.9rem;
+  font-weight: 400;
+  opacity: .7;
 }
 /*# sourceMappingURL=shopify.css.map */

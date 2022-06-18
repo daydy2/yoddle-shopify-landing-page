@@ -93,9 +93,60 @@ const Shopify = () => {
             <div className="section2__div-footer">
               <h2 className="section2__h2-heading">Take the best path forward</h2>
 
-              <div className="section2__div-footerQ">
-                
+              <div className="row">
+
+                <div className="col-1-of-4 cole">
+                  <div className="row__icon">
+                    <i class="fa-solid fa-3x fa-circle-info"></i>
+                  </div>
+                  
+                  <h3 className="heading-tertiary">Start an online</h3>
+                  <p className='row-text-p'>Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.</p>
+                </div>
+
+                <div className="col-1-of-4 cole">
+                  <div className="row__icon">
+                    <i class="fa-solid fa-2x fa-circle-info"></i>
+                  </div>
+                  <h3 className="heading-tertiary">Move your business online</h3>
+                  <p className="row__text--p">
+                    Turn your retail store into an online store and keep serving customers without missing a beat.
+                  </p>
+                </div>
+
+                <div className="col-1-of-4 cole">
+                  <div className="row__icon">
+                    <i class="fa-solid fa-2x fa-circle-info"></i>
+                  </div>
+                  
+                  <h3 className="heading-tertiary">Switch to Shopify</h3>
+                  <p className="row__text--p">
+                    Bring your business to Shopify, no matter which ecommerce platform you’re currently using.
+                  </p>
+                </div>
+
+                <div className="col-1-of-4 cole">
+                  <div className="row__icon">
+                    <i class="fa-solid fa-2x fa-circle-info"></i>
+                  </div>
+                  
+                  <h3 className="heading-tertiary">Hire a Shopify expert</h3>``
+                  <p className="row__text-p">
+                    Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.
+                  </p>
+                </div>
               </div>
+            </div>
+          </section>
+
+          <section className="section3">
+            <div className="section3__header-text">
+              <h1 className="section2__div-h1Text">
+                With you wherever you're going
+              </h1>
+              <p className="section3__header-p">
+              One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.
+              </p>
             </div>
           </section>
           

@@ -2,6 +2,7 @@
 @import '../../sass/abstracts/mixins';
 @import '../../sass/abstracts/variables';
 @import '../../sass//base/animations';
+@import '../../sass/layouts/grid';
 
 .shopify{
     position: relative;
@@ -17,14 +18,14 @@
 
     &__div1{
 
-        height: 542px;
+        height: 54.2rem;
         flex: 7;
         position: relative;
         font-family: 'Lora', serif;
 
         &-emailForm{
             width: 80%;
-            height: 300px;
+            height: 30.0rem;
             // position: absolute;
             margin-top: 23%;
             margin-left: 6.6%;
@@ -52,15 +53,15 @@
         }
         &-pText{
             font-size: 1.3rem;
-            margin-top: 15px;
+            margin-top: 1.5rem;
             
         }
         &-form{
-            margin-top: 15px;
+            margin-top: 1.5rem;
 
             & > input{
                 width: 72.0%;
-                height: 51px;
+                height: 5.1rem;
                 padding:3px 10px ;
                 font-size: 1.6rem;
                 border: 1px solid $nav-trial;
@@ -74,8 +75,8 @@
             }
             & > button{
                 @include btnHover;
-                width: 164px;
-                height: 51px;
+                width: 16.4rem;
+                height: 5.1rem;
                 border-style:none;
                 outline: none;
                 font-size: 1.6rem;
@@ -278,35 +279,55 @@
             }
         }
     }
-}
-.margBot{
-    margin-left: .5%;
-    margin-right: .5%;
-
-    &Left{
+    &__h2-heading{
+        margin: 3rem 0;
+        font-weight: 400;
+    }
+    .margBot{
         margin-left: .5%;
-
+        margin-right: .5%;
+    
+        &Left{
+            margin-left: .5%;
+    
+            @media screen and (max-width: 800px) and (min-width: 300px) {
+                &{
+                    margin-top: 10px; 
+                }
+            }
+        }
+        
+        &Right{
+            margin-right: .5%;
+    
+            @media screen and (max-width: 800px) and (min-width: 300px) {
+                &{
+                    margin-bottom: 10px; 
+                }
+            }
+        }
         @media screen and (max-width: 800px) and (min-width: 300px) {
             &{
+                margin-bottom: 10px;
                 margin-top: 10px; 
             }
         }
     }
     
-    &Right{
-        margin-right: .5%;
+}
+.section3{
+    background: orangered;
 
-        @media screen and (max-width: 800px) and (min-width: 300px) {
-            &{
-                margin-bottom: 10px; 
-            }
-        }
+    &__header-text{
+        display: inline-block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
     }
-    @media screen and (max-width: 800px) and (min-width: 300px) {
-        &{
-            margin-bottom: 10px;
-            margin-top: 10px; 
-        }
+    & > p{
+        font-size: 1.9rem;
+        font-weight: 400;
+        opacity: .7;
     }
 }
 
