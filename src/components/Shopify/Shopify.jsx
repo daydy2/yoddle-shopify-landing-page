@@ -8,6 +8,8 @@ import sam4 from '../../img/sam41.jpg'
 import sam5 from '../../img/sam5.jpg'
 import mrkt from '../../img/mrkt.jpg'
 import mng from '../../img/mng.jpg'
+import cobe from '../../img/cobe-alt.png'
+import chio from '../../img/chioma.jpg'
 import './shopify.css'
 
 const Shopify = () => {
@@ -18,7 +20,9 @@ const Shopify = () => {
   return (
     <>
         <main className='main'>
+
         <Navbar />
+
           <section className="section">
             {/* <Navbar /> */}
             
@@ -35,6 +39,7 @@ const Shopify = () => {
                   <p className='section__div1-pText'>Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
                 </div>
               </div>
+
               <div className="section__div2">
                 <div className="section__div2-playVideo">
                   <div className="section__div2-icon">
@@ -99,7 +104,7 @@ const Shopify = () => {
 
                 <div className="col-1-of-4 cole">
                   <div className="row__icon">
-                    <i class="fa-solid fa-3x fa-circle-info"></i>
+                    <i class="fa-solid fa-2x fa-circle-info"></i>
                   </div>
                   
                   <h3 className="heading-tertiary">Start an online</h3>
@@ -231,7 +236,58 @@ const Shopify = () => {
               <a href="#!" class='anc anc__learn'>Learn more about Shopify <span class='arr'>&rarr;</span></a>
             </div>
           </section>
+
+          <section className="section4">
+            <div className="section4-imgContainer">
+              <img src={cobe} alt="cobe" className='cobeImg' />
+            </div>
+
+            <div className="section4__ceeC">
+
+              <div className="section4__ceeC-chi">
+                <img src={chio} alt="chioma" className='chiImg' />
+              </div>
+              <div className="section4__ceeC-chiText">
+
+                <div className="section4-chiStory">
+                  <p className='section4-chiStory-P'>
+                    “We’ve been able to build something in 3 years that a lot of brands haven’t actually gotten to in 10 years.”
+                  </p>
+                  <div className="cee-ImgCont">
+                    <img src='https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-cee-cees-closet-small-bbc2baa973603b707c4d17c8ac77b35b9097174340d500cc757354a7d868c456.png' alt="cee webp" className='ceeWebp'/>
+                  </div>                  
+                  <p className="ceeTagname"> Chioma | Cee Cee’s Closet NYC </p>
+                </div>
+                <div className="section4__ceeC-btn">
+                  <a href='#' className='chiAnc text-nowrap'> <i class="fa-solid fa-play"></i> Play Chioma and Uchenna's story </a>
+                </div>
+                
+              </div>
+            </div>
+            <ul className='imglogoList'>
+              
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-small-1d6b515579404482342748f0b67ff6e09836a47b648250d8d1b00e2a24b29faa.png" alt="cee cee logo" className='imgContainer' /></li>
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-small-b5cd674cc9203997e3a72f2726c8aaa3d594a27c2f69001b4ad833939e9af5ce.png" alt="natale logo" className='imgContainer'/></li>
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-small-b85f000eede1716da6a496a95ff3836b300b5beaa57617ab834332b675ede0d6.png" alt="kirrin finch logo" className='imgContainer'/></li>
+              
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-small-2295b7e1d183bae07eb36ad83451ec624cfe61bbec39e85877d40600f22115b2.png" alt="tokyomobile" className='imgContainer'/></li>
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-small-d5c7243d2e6e1e1677b5648f1e672701476c5df7d516a131013a46c7721c98b4.png" alt="meso" className='imgContainer'/></li>
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-small-3cc3c1f7d5c50000624adec29ce71dae453821ce3813f0e34b2d3351b5f2b4b2.png" alt="coco breezy" className='imgContainer'/></li>
+              
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-small-3cbca35150e701329098cd95f21ec9388886479a5f781a515466b59d80d7b5bb.png" alt="broklyn Museum" className='imgContainer'/></li>
+                <li className='imglogoListItem'><img src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-small-b4e6488ccabc61cdaaf92d931a5b8a591a35d55982a796a5b582924a9563afb1.png" alt="Adore me" className='imgContainer'/></li>
+              
+            </ul>
+          </section>
           
+          <section className="section5">
+            <div className="section5__part1">
+
+            </div>
+            <div className="section5__part2">
+              
+            </div>
+          </section>
         </main>
     </>
   )
