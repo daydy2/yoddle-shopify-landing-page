@@ -1,0 +1,18 @@
+
+.anc:link,
+.anc:visited{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $nav-trial;
+    transition: all .3s ease-out;
+
+}
+
+.anc:hover{  
+
+    & > .arr{
+        transform: rotate(90deg), translateX(10px);
+    }
+}
+

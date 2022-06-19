@@ -6,6 +6,8 @@ import sam2 from '../../img/sam2.jpg'
 import sam3 from '../../img/sam3.jpg'
 import sam4 from '../../img/sam41.jpg'
 import sam5 from '../../img/sam5.jpg'
+import mrkt from '../../img/mrkt.jpg'
+import mng from '../../img/mng.jpg'
 import './shopify.css'
 
 const Shopify = () => {
@@ -140,13 +142,93 @@ const Shopify = () => {
           </section>
 
           <section className="section3">
+
             <div className="section3__header-text">
-              <h1 className="section2__div-h1Text">
+              <h1 className="section2__div-h1Text section3-h1">
                 With you wherever you're going
               </h1>
-              <p className="section3__header-p">
-              One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.
+              <p className="section3__header-p">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+            </div>
+
+            {/* START OF FLEXBOX LAYOUT */}
+
+            <div className="section3__wrapper">
+            
+              <div className="section3__wrapper-webm">
+                <video controls autoplay loop='loop' playsInline='playsonline' datat-autoplay='true' data-lazyload='true' data-poster='https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg' data-event-page='homepage' data-event-category='homepage'
+                data-event-action='sell' data-event-label='video-toggle' class='video__toggle' >
+                  <source src='https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm' type='video/webm' />
+                  Sorry your browser doesn't support embedded videos.
+                </video>
+              </div>
+              <div className="section3__wrapper-seller">
+                <div className="section-boxInfo">
+                  <h2 section-boxInfo--h2>
+                    Sell everywhere
+                  </h2>
+                  <p className='sellerText'>
+                    Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.
+                  </p>
+                  <a href="#!" class='anc'>Explore ways to sell <span class='arr'>&rarr;</span></a>
+                  
+                </div>
+              </div>
+
+            </div>
+            {/*END OF FLEXBOX LAYOUT */}
+
+            {/* START OF FLEXBOX2 LAYOUT */}
+            <div className="section3__wrapper">
+              <div className="section3__wrapper-seller">
+                <div className="section-boxInfo">
+                  <h2 className='section-boxInfo--h2'>Market your business</h2>
+                  <p className='sellerText secondText'>
+                  Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.
+                  </p>
+                  <a href="#!" class='anc'>Explore how to market your business <span class='arr'>&rarr;</span></a>
+                </div>
+
+                
+              </div>
+
+              <div className="section3__wrapper-webm ">
+
+                <img src={mrkt} alt="marketing your business"  className='flexImage'/>
+              </div>
+              
+            </div>
+            
+            {/*END OF FLEXBOX2 LAYOUT */}
+
+            {/* START OF FLEXBOX3 LAYOUT */}
+            <div className='section3__wrapper'>
+              <div className="section3__wrapper-webm box--shadow">
+                <img src={mng} alt="marketing your business"  className='flexImage box--shadow'/>
+              </div>
+
+              <div className=" section3__wrapper-seller ">
+              <div className="section-boxInfo">
+                <h2 className='section-boxInfo--h2'>Manage everything</h2>
+                  <p className='sellerText thirdText'>
+                    Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.
+                  </p>
+                  <a href="#!" class='anc'>Explore how to manage your business <span class='arr'>&rarr;</span></a>
+                </div>
+                
+              </div>
+            </div>
+
+            {/*END OF FLEXBOX3 LAYOUT */}
+
+            <div className="section3-emp">
+              <p className="section3-emp1">
+              Empowering independent business owners everywhere
               </p>
+              <p className="section3-emp2">
+              Millions of businesses in 175 countries around the world have made over $496 billion USD in sales using Shopify.
+              </p>
+
+              <a href="#!" class='anc anc__learn'>Learn more about Shopify <span class='arr'>&rarr;</span></a>
             </div>
           </section>
           

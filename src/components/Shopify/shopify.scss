@@ -4,6 +4,8 @@
 @import '../../sass//base/animations';
 @import '../../sass/layouts/grid';
 
+@import '../../sass//components/buttons';
+
 .shopify{
     position: relative;
     background: $color-bg-section1;
@@ -316,18 +318,117 @@
     
 }
 .section3{
-    background: orangered;
+    background: $color-white;
+    padding: 10rem 0;
 
+    
     &__header-text{
-        display: inline-block;
-        width: 50%;
-        margin: 0 auto;
+        width: 45%;      
         text-align: center;
+        font-family: 'Cabin', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10rem;
+
+        @media screen and (max-width: 70rem) {
+            width: 80%
+        }
+
+       
     }
-    & > p{
-        font-size: 1.9rem;
+
+    &-h1{
+        font-size: 3.9rem;
         font-weight: 400;
-        opacity: .7;
+        padding: 0 1.5rem;
+
+        @media screen and (max-width: 70rem) {
+            font-style: 3.0rem;
+        }
+
+    }
+    &__header-p{
+        font-size: 2.0rem;
+        font-weight: 400;
+        line-height: 2rem;
+        opacity: .8;
+        text-align: center;
+        margin-top: 1.6rem;
+
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10.7rem;
+        margin-right: 10.7rem;
+        
+        @media screen and (max-width: 70rem) {
+           margin: 0;
+           padding: 0 1rem 0 3.5rem;
+           flex-direction: column-reverse;
+        }
+
+
+        &-webm{
+            flex: 6;
+
+            .video__toggle{
+                width: 100%;
+            }
+        }
+        &-seller{
+            flex: 6;
+            margin-left: 5rem;
+            width: 60%;
+
+            @media screen and (max-width: 70rem) {
+                margin-left: 2rem;
+                margin-bottom: 2rem;
+            }
+    
+
+            .section-boxInfo{
+                width: 75%;
+                margin-top: 7rem;
+
+                @media screen and (max-width: 70rem) {
+                    margin-top: 1rem;
+                    width: 100%;
+                }
+        
+
+                &--h2{
+                    font-size: 2.8rem;
+                    font-weight: 400;
+
+                    
+                }
+
+                .sellerText{
+                    font-size: 1.5rem;
+                    text-align: left;
+                    
+                    @media screen and (max-width: 70rem) {
+                        font-size: 1.3rem;
+                        
+                    }
+            
+                }
+            }                     
+        }
+    }
+    &-emp{
+        padding: 10rem 10.5rem;
+
+        
     }
 }
 
+.flexImage{
+    width: 100%;
+}
+.box--shadow{
+    box-shadow: 2px 6px 72px -27px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 6px 72px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 6px 72px -27px rgba(0,0,0,0.75);
+}
