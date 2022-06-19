@@ -598,6 +598,19 @@ html {
   padding: 10rem 10.5rem;
 }
 
+.section3-emp1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  width: 45%;
+  padding-bottom: 5rem;
+}
+
+.section3-emp2 {
+  font-size: 2.5rem;
+  width: 65%;
+  padding-bottom: 2rem;
+}
+
 .flexImage {
   width: 100%;
 }
