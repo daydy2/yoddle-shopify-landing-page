@@ -86,7 +86,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <span className="nav__div-leftText text-nowrap " >Log in</span>
-                    <span className="nav__div-leftText text-nowrap textBox">Start free trial</span>
+                    <span className="nav__div-leftText text-nowrap textBox" >Start free trial</span>
                 </div>       
                 <div className="nav__div-toggle">
                     <div className="nav__div-toggle-Text">

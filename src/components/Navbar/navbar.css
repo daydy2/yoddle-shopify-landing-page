@@ -9,6 +9,15 @@ html {
   font-size: 62.5%;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .main {
   background: #fbf7ed;
   position: -webkit-sticky;

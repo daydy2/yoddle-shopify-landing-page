@@ -9,33 +9,72 @@ html {
   font-size: 62.5%;
 }
 
-@-webkit-keyframes moveInLeft {
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes moveUp {
   0% {
-    -webkit-transform: translateX(-14px);
-            transform: translateX(-14px);
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
   }
   80% {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
-@keyframes moveInLeft {
+@keyframes moveUp {
   0% {
-    -webkit-transform: translateX(-14px);
-            transform: translateX(-14px);
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
   }
   80% {
-    -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(1.5rem);
+            transform: translateX(1.5rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(1.5rem);
+            transform: translateX(1.5rem);
+  }
+  80% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -88,7 +127,7 @@ html {
 
 .anc:link,
 .anc:visited {
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 1.8rem;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -103,7 +142,7 @@ html {
 
 .chiAnc:link,
 .chiAnc:visited {
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 1.8rem;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -118,6 +157,37 @@ html {
   .chiAnc:visited {
     font-size: 1.6rem;
   }
+}
+
+.section6anc:link,
+.section6anc:visited {
+  text-decoration: none !important;
+  font-size: 1.8rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.freeBtn {
+  background-color: #007559;
+  color: white !important;
+  padding: 1.3rem 2rem;
+  border-radius: 5px;
+}
+
+.freeBtn:hover {
+  cursor: pointer;
+  background-color: #007559;
+  text-decoration: none !important;
+}
+
+.backTop {
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: #007559 !important;
+}
+
+.backTop:hover {
+  cursor: pointer;
 }
 
 .shopify {
@@ -197,7 +267,7 @@ html {
 
 .section__div1-form > input:active, .section__div1-form > input:focus {
   outline: none;
-  border: 2.5px solid rgba(0, 117, 89, 0.3);
+  border: 2.5px solid #007559;
 }
 
 .section__div1-form > button {
@@ -249,12 +319,12 @@ html {
 .section__div2 {
   height: 692px;
   width: 100%;
+  background-size: cover;
+  background-position: top;
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
   background-image: url("../../img/nat-9.jpg");
-  background-size: cover;
-  background-position: top;
   position: relative;
 }
 
@@ -809,18 +879,122 @@ html {
           flex-direction: row;
 }
 
+@media screen and (max-width: 950px) and (min-width: 300px) {
+  .section5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section5__part1 {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
   background-color: #fbf7ed;
+  padding-top: 9.6rem;
+}
+
+.section5__part1-h2 {
+  font-size: 3.4rem;
+  width: 75%;
+}
+
+.section5__part1-sub {
+  padding-top: 3rem;
+  padding-left: 0;
+}
+
+.section5__part1-h3 {
+  font-size: 1.9rem;
+}
+
+.section5__part1-p {
+  font-size: 1.6rem;
+  width: 95%;
+  padding-top: 1rem;
+}
+
+.section5__part1-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section5__part2 {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
-  background-image: url(../../img/nat-5.jpg);
+  height: auto;
+  width: 100%;
+}
+
+.section5__part2-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section5__part1-container {
+  padding-left: 4rem;
+}
+
+.section6 {
+  background-color: #fff;
+  padding-top: 7rem;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.section6__tag {
+  width: 60%;
+  margin: 0rem auto;
+}
+
+.section6__tag-h1 {
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: 400;
+}
+
+.section6__tag-p {
+  text-align: center;
+  font-size: 2.2rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+}
+
+.section6__atag {
+  margin: 2rem;
+  text-align: center;
+}
+
+.section6__up {
+  position: absolute;
+  right: 6rem;
+  bottom: 1rem;
+}
+
+.section6__up:hover .upArr {
+  display: inline-block;
+  -webkit-animation: moveUp .6s ease-out;
+          animation: moveUp .6s ease-out;
 }
 
 .flexImage {
@@ -845,8 +1019,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -856,9 +1028,17 @@ html {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #fff;
 }
 
 .imglogoListItem {
   padding: 3rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.containterCommon {
+  width: 45%;
+  padding-bottom: 1.5rem;
 }
 /*# sourceMappingURL=shopify.css.map */

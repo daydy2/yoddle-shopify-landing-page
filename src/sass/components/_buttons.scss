@@ -30,3 +30,31 @@
     }
     
 }
+
+.section6anc:link,
+.section6anc:visited{
+    @include button;
+    
+}
+.freeBtn{
+    background-color: $nav-trial;
+    color: white !important;
+    padding: 1.3rem 2rem;
+    border-radius: 5px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $nav-trial2;
+        text-decoration: none !important;
+    }
+}
+.backTop{
+    font-size: 2.9rem;
+    font-weight: 600;
+    color: $nav-trial !important;
+
+    &:hover{
+        cursor: pointer;
+        
+    }
+}

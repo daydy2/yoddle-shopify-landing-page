@@ -1,13 +1,27 @@
-@keyframes moveInLeft{
+@keyframes moveUp{
     0%{
         
-        transform: translateX(-14px);
+        transform: translateY(-1.5rem);
     }
     80%{
-        transform: translateX(-8px);
+        transform: translateY(-1rem);
     }
     100%{
         
-        transform: translateX(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        
+        transform: translateX(1.5rem);
+    }
+    80%{
+        transform: translateX(1rem);
+    }
+    100%{
+        
+        transform: translateY(0);
     }
 }

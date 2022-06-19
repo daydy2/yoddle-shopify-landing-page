@@ -10,6 +10,7 @@ import mrkt from '../../img/mrkt.jpg'
 import mng from '../../img/mng.jpg'
 import cobe from '../../img/cobe-alt.png'
 import chio from '../../img/chioma.jpg'
+import nat5 from '../../img/nat-5.jpg'
 import './shopify.css'
 
 const Shopify = () => {
@@ -160,7 +161,7 @@ const Shopify = () => {
             <div className="section3__wrapper">
             
               <div className="section3__wrapper-webm">
-                <video controls autoplay loop='loop' playsInline='playsonline' datat-autoplay='true' data-lazyload='true' data-poster='https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg' data-event-page='homepage' data-event-category='homepage'
+                <video controls autoplay={true} loop='loop' playsInline='playsonline' datat-autoplay='true' data-lazyload='true' data-poster='https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg' data-event-page='homepage' data-event-category='homepage'
                 data-event-action='sell' data-event-label='video-toggle' class='video__toggle' >
                   <source src='https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm' type='video/webm' />
                   Sorry your browser doesn't support embedded videos.
@@ -281,13 +282,66 @@ const Shopify = () => {
           </section>
           
           <section className="section5">
+
             <div className="section5__part1">
 
-            </div>
-            <div className="section5__part2">
+              <div className="section5__part1-container">
+                <h2 className="section5__part1-h2">Get the help you need, every step of the way</h2>
+
+                <div className="section5__part1-sub">
+
+                  <div className="section5__part1-container1 containterCommon">
+                    <h3 className="section5__part1-h3">Shopify support</h3>
+                    <p className="section5__part1-p">
+                    Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.
+                    </p>
+                    <a href="#" className='anc'>Contact support &rarr;</a>
+                  </div>
+
+                  <div className="section5__part1-container2 containterCommon">
+                    <h3 className="section5__part1-h3">Shopify App Store</h3>
+                    <p className="section5__part1-p">
+                      Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.
+                    </p>
+                    <a href="#" className='anc'>Visit the Shopify App Store  &rarr;</a>
+                  </div>
+
+                  <div className="section5__part1-container3 containterCommon">
+                    <h3 className="section5__part1-h3">Shopify Experts Marketplace</h3>
+                    <p className="section5__part1-p">
+                      Hire a Shopify expert to help you with everything from store setup to SEO.
+                    </p>
+                    <a href="#" className='anc'>Explore the Shopify Experts Marketplace &rarr;</a>
+                  </div>
+                </div>
+              </div>
+
               
+
+            </div>
+
+            <div className="section5__part2">
+              <img src={nat5} alt="nat5" className='section5__part2-img'/>
             </div>
           </section>
+
+          <section className="section6">
+            <div className="section6__tag">
+              <h1 className="section6__tag-h1">Start your business journey with shopify</h1>
+              <p className="section6__tag-p">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+              <div className="section6__atag">
+                <a href="#" className='section6anc freeBtn text-reset'> Start free trial</a>
+              </div>
+              
+            </div>
+            <div className="section6__up">
+              <a href="/" className='section6anc backTop text-reset'> Back to top <span className="upArr">&uarr;</span></a>
+            </div>
+          </section>
+
+          <footer className="footer">
+
+          </footer>
         </main>
     </>
   )

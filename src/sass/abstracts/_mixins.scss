@@ -23,7 +23,7 @@
 }
 
 @mixin button {
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 1.8rem;    
     transition: all .3s ease-out;
 }
