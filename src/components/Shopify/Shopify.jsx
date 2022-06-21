@@ -22,7 +22,8 @@ const Shopify = () => {
     <>
         <main className='main'>
 
-        <Navbar />
+          <Navbar />
+          <a id="top"></a>
 
           <section className="section">
             {/* <Navbar /> */}
@@ -30,6 +31,7 @@ const Shopify = () => {
               <div className="section__div1">
                 <div className=" section__div1-emailForm ">               
                   <p className="section__div1-text">Build an online business—no matter what business you’re in</p>
+                  
                 
                   <form onSubmit={handleForm} className='section__div1-form'>
                     <label for="useremail"></label>
@@ -57,12 +59,12 @@ const Shopify = () => {
             <div className="section2__div-adText">
               <h1 className="section2__div-h1Text">Bring your business online</h1>
               <p className='section2__div-pText'>Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
-              <p className='section2__div-pExample'>
+              <a href='#' className='anc section2__div-pExample'>
                 Explore more examples
-                <span className="section2__div-pExample-icon">
-                  <i class="fa-solid fa-arrow-right"></i>
+                <span className="rarr">
+                  <i class="fa-solid fa-arrow-right-long"></i>
                 </span>
-              </p>
+              </a>
               <ul className="section2__ul">
 
                 <li className="section2__ul-listItem margBotRight">
@@ -138,7 +140,7 @@ const Shopify = () => {
                     <i class="fa-solid fa-2x fa-circle-info"></i>
                   </div>
                   
-                  <h3 className="heading-tertiary">Hire a Shopify expert</h3>``
+                  <h3 className="heading-tertiary">Hire a Shopify expert</h3>
                   <p className="row__text-p">
                     Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.
                   </p>
@@ -161,7 +163,7 @@ const Shopify = () => {
             <div className="section3__wrapper">
             
               <div className="section3__wrapper-webm">
-                <video controls autoplay={true} loop='loop' playsInline='playsonline' datat-autoplay='true' data-lazyload='true' data-poster='https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg' data-event-page='homepage' data-event-category='homepage'
+                <video controls autoplay loop='loop' playsInline='playsonline' datat-autoplay='true' data-lazyload='true' data-poster='https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg' data-event-page='homepage' data-event-category='homepage'
                 data-event-action='sell' data-event-label='video-toggle' class='video__toggle' >
                   <source src='https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm' type='video/webm' />
                   Sorry your browser doesn't support embedded videos.
@@ -175,7 +177,7 @@ const Shopify = () => {
                   <p className='sellerText'>
                     Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.
                   </p>
-                  <a href="#!" class='anc'>Explore ways to sell <span class='arr'>&rarr;</span></a>
+                  <a href="#!" class='anc'>Explore ways to sell <span class='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
                   
                 </div>
               </div>
@@ -191,7 +193,7 @@ const Shopify = () => {
                   <p className='sellerText secondText'>
                   Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.
                   </p>
-                  <a href="#!" class='anc'>Explore how to market your business <span class='arr'>&rarr;</span></a>
+                  <a href="#!" class='anc'>Explore how to market your business <span class='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
                 </div>
 
                 
@@ -218,7 +220,7 @@ const Shopify = () => {
                   <p className='sellerText thirdText'>
                     Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.
                   </p>
-                  <a href="#!" class='anc'>Explore how to manage your business <span class='arr'>&rarr;</span></a>
+                  <a href="#!" class='anc'>Explore how to manage your business <span class='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
                 </div>
                 
               </div>
@@ -234,7 +236,7 @@ const Shopify = () => {
               Millions of businesses in 175 countries around the world have made over $496 billion USD in sales using Shopify.
               </p>
 
-              <a href="#!" class='anc anc__learn'>Learn more about Shopify <span class='arr'>&rarr;</span></a>
+              <a href="#!" class='anc anc__learn'>Learn more about Shopify <span class='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
             </div>
           </section>
 
@@ -295,7 +297,7 @@ const Shopify = () => {
                     <p className="section5__part1-p">
                     Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.
                     </p>
-                    <a href="#" className='anc'>Contact support &rarr;</a>
+                    <a href="#" className='anc'>Contact support <span className='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
                   </div>
 
                   <div className="section5__part1-container2 containterCommon">
@@ -303,7 +305,7 @@ const Shopify = () => {
                     <p className="section5__part1-p">
                       Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.
                     </p>
-                    <a href="#" className='anc'>Visit the Shopify App Store  &rarr;</a>
+                    <a href="#" className='anc'>Visit the Shopify App Store <span className='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
                   </div>
 
                   <div className="section5__part1-container3 containterCommon">
@@ -311,7 +313,7 @@ const Shopify = () => {
                     <p className="section5__part1-p">
                       Hire a Shopify expert to help you with everything from store setup to SEO.
                     </p>
-                    <a href="#" className='anc'>Explore the Shopify Experts Marketplace &rarr;</a>
+                    <a href="#" className='anc'>Explore the Shopify Experts Marketplace <span className='rarr'><i class="fa-solid fa-arrow-right-long"></i></span></a>
                   </div>
                 </div>
               </div>
@@ -335,11 +337,136 @@ const Shopify = () => {
               
             </div>
             <div className="section6__up">
-              <a href="/" className='section6anc backTop text-reset'> Back to top <span className="upArr">&uarr;</span></a>
+              <a href="#top" className='section6anc backTop text-reset'> Back to top <span className="upArr"><i class="fa-solid fa-arrow-up-long"></i></span></a>
             </div>
           </section>
 
           <footer className="footer">
+            <div className="footer__biggerBox">
+              <div className="footer__info">
+                <nav className="footer__info-nav">
+                  <ul className="footer__info-navul">
+                    <li className="footer__info-navlist"><a href="#" className='text-reset'>About</a></li>
+                    <li className="footer__info-navlist"><a href="#" className='text-reset'>Careers</a></li>
+                    <li className="footer__info-navlist"><a href="#" className='text-reset'>Press and Media</a></li>
+                    <li className="footer__info-navlist"><a href="#" className='text-reset'>Shopify Plus</a></li>
+                    <li className="footer__info-navlist"><a href="#" className='text-reset'>Sitemap</a></li>
+                  </ul>
+                </nav>
+                
+                <div className="footer__infoFlex">
+                  
+
+                  <div className="footer__infoFlex-g1 ">
+                    <h3 className="footer__infoFlex-h3Common">Online Store</h3>
+                    <ul className="footer__infoFlex-gu ulOnline">
+
+                      <div className="part1">
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Sell online</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Features</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Examples</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Website builder</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Online retail</a></li>
+                      </div>
+                      <div className="part2">
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Ecommerce website</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Domain names</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Themes</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Shopping cart</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Ecommerce hosting</a></li>
+                      </div>
+                      <div className="part3">
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Mobile commerce</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Ecommerce software</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Online store builder</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Dropshipping Business</a></li>
+                        <li className="footer__infoFlex-guList"><a href="#" className='text-reset'></a>Store themes</li>
+                      </div>
+
+                      
+                      
+                      
+
+                    </ul>
+                  </div>
+
+                  <div className="footer__infoFlex-gInterval">
+                    <div className="footer__infoFlex-g2 ">
+                      <h3 className="footer__infoFlex-h3Common">Point of Sale</h3>
+
+                      <div className="footer__infoFlex-g1">
+                        <ul className="footer-infoFlex-gu">
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'></a>Point of Sale</li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Features</a></li>
+                        </ul>
+                      </div>                  
+                      
+                    </div>
+
+                    <div className="footer__infoFlex-g3 ">
+                        <h3 className="footer__infoFlex-h3Common">Support</h3>
+
+                        <div className="footer__infoFlex-g1">
+                          <ul className="footer-inforFlex-gu">
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>24/7 support</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Shopify Help Center</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Shopify Community</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>API documentation</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Free tools</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Free stock photos</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Websites for sale</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Logo Maker</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Business name generator</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Research</a></li>
+                            <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Legal</a></li>
+                          </ul>
+                        </div>
+                    </div>
+
+                    <div className="footer__infoFlex-g4 ">
+                      <h3 className="footer__infoFlex-h3Common">Shopify</h3> 
+
+                      <div className="footer__infoFlex-g1">
+                        <ul className="footer__inforFlex-gu">
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Contact</a></li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Partner program</a></li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Affliate program</a></li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>App developers</a></li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Investors</a></li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Blog topics</a></li>
+                          <li className="footer__infoFlex-guList"><a href="#" className='text-reset'>Community Events</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+              
+
+              </div>
+
+              
+            </div>
+            <div className="footer__contact">
+                <div className="footer__contactIcon">
+                  <ul className="footer__contactIcon-ul">
+                    <li className="footer__contact-ul-list"><a href='#' className='text-reset'><i class="fa-brands fa-2x fa-facebook "></i></a></li>
+                    <li className="footer__contact-ul-list"><a href="#" className='text-reset'><i class="fa-brands fa-2x fa-twitter"></i></a></li>
+                    <li className="footer__contact-ul-list"><a href="#" className='text-reset'><i class="fa-brands fa-2x fa-youtube"></i></a></li>
+                    <li className="footer__contact-ul-list"><a href="#" className='text-reset'><i class="fa-brands fa-2x fa-instagram"></i></a></li>
+                    <li className="footer__contact-ul-list"><a href="#" className='text-reset'><i class="fa-brands fa-2x fa-linkedin"></i></a></li>
+                    <li className="footer__contact-ul-list"><a href="#" className='text-reset'><i class="fa-brands fa-2x fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+
+                <div className="footer__contactTnc">
+                  <span className="footer__contactTnc1">Terms of Service</span>
+                  <span className="footer__contactTnc2">Privacy Policy</span>
+                  <span className="footer__contactTnc3"><i class="fa-solid fa-globe"></i> Nigeria <i class="fa-solid fa-caret-down"></i></span>
+                </div>
+              </div>
+            
 
           </footer>
         </main>

@@ -27,3 +27,8 @@
     font-size: 1.8rem;    
     transition: all .3s ease-out;
 }
+
+@mixin arrAnimate{
+    display: inline-block; 
+    animation: moveRight .6s ease-out;
+}

@@ -5,12 +5,17 @@
     color: $nav-trial;
     font-weight: 600;
 
+    .rarr{
+        padding-left: .7rem;
+    }
+
 }
 
 .anc:hover{  
 
-    & > .arr{
-        transform: rotate(90deg), translateX(10px);
+    .rarr{
+        display: inline-block; 
+        animation: moveRight .6s ease-out;
     }
 }
 
